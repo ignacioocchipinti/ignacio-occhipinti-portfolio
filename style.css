@@ -1,0 +1,219 @@
+@import url('https://fonts.cdnfonts.com/css/area-neu');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", serif, sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'Area Neu', sans-serif;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.home-right .title {
+    text-transform: uppercase;
+    width: 70%;
+    font-size: 58px;
+}
+
+.home-right h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 30%;
+    letter-spacing: 3px;
+}
+
+.home-menu p,
+.home-menu a {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 14px 0px;
+}
+
+.about {
+    overflow: hidden;
+}
+
+.about-info p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+}
+
+#canvas-container,
+#canvas-mobile-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact-info p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-info-link {
+    color: black;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+.contact-info-link:hover {
+    transition: 0.1s ease;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .home-left,
+    .home-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        margin-top: 20px;
+        position: fixed;
+        top: 10px;
+        left: 30px;
+        font-size: 30px;
+        z-index: 999;
+    }
+
+    .menu-mobile {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        top: -100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s ease;
+        z-index: 998;
+        list-style: none;
+    }
+
+    .menu-mobile .menu-link {
+        font-size: 28px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 400;
+        letter-spacing: 5px;
+    }
+
+    .menu-mobile li {
+        margin: 15px 0px;
+    }
+
+    .home-right {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .moible-hero-container {
+        height: 100%;
+    }
+
+    .home-title {
+        margin-top: 70px;
+    }
+
+    .home-title .title {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .mobile-hero img {
+        height: 600px;
+    }
+
+    .about-info p {
+        font-size: 17px;
+    }
+
+    .contact-left p {
+        font-size: 70px;
+        width: 70%;
+    }
+
+    .contact .mail {
+        font-size: 20px !important;
+    }
+
+    .contact-info-link {
+        font-size: 18px !important;
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+
+
+    .about-img img {
+        object-fit: cover;
+        object-position: -100px;
+    }
+
+    .about-info p {
+        margin: 6px 0px;
+    }
+
+    .contact-left p {
+        font-size: 100px;
+        width: 70%;
+    }
+
+    .contact .mail {
+        font-weight: 300 !important;
+    }
+
+    .contact-info-link {
+        font-weight: 300 !important;
+    }
+
+}
+
+@media (min-width: 1401px) {
+    .about-info p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .home-menu p a{
+        font-size: 20px;
+    }
+
+    .contact-left p {
+        font-size: 120px;
+        width: 50%;
+    }
+}
